@@ -1,0 +1,12 @@
+Facebook Friends List
+
+A simple way to allow users to authenticate with facebook api and display their friends in a listview.
+
+You will need to add the facebook-android-sdk to your workspace as outlined by facebook's sdk tutorial
+You will also need google-gson 2.1 lirbary
+
+Better instructions for configuring the app with are coming soon. For now once the two listed resources are available to the build path, right click the project name and select properties from the dropdown. Under the Javabuild path select the project tab, and edit the com_facebook_android path. Do the same for the gson library under the libraries tab.
+
+Once the project is setup in eclipse the only other thing that needs to be changed is to set your facebook app id in org.tayloredapps.facebook_ex/FacebookEx.java
+
+At this point you should be ready to run the app on a device to test it out.
