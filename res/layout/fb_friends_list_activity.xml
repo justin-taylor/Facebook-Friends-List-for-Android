@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1">
+  
+  
+  <!-- Title Bar -->
+  <RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/blue_bar_gradient"
+  android:padding="7dp">
+  
+  	<TextView
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="facebook"
+  	android:textColor="#FFFFFFFF"
+  	android:textSize="17dp"
+  	android:textStyle="bold"
+  	android:layout_centerInParent="true">
+  	</TextView>
+  	
+  	<Button
+  	android:layout_height="wrap_content" 
+  	android:layout_width="wrap_content"
+  	android:paddingLeft="7dp"
+  	android:paddingRight="7dp"
+  	android:paddingTop="4dp"
+  	android:paddingBottom="4dp"
+  	android:text="Cancel"
+  	android:textColor="#FFFFFFFF"
+  	android:textSize="14dp"
+  	android:background="@drawable/blue_button"
+  	android:layout_alignParentRight="true"
+  	android:id="@+id/cancelButton">
+  	</Button>
+  
+  </RelativeLayout>
+  
+  <ListView
+  android:id="@+id/friendsList"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_weight="1" android:cacheColorHint="#00000000" android:background="#FFFFFFFF" android:dividerHeight="1dp" android:divider="#FFAAAAAA">
+  </ListView>
+  
+  <RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/blue_bar_gradient"
+  android:padding="7dp">
+  
+  		<LinearLayout
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_centerInParent="true">
+  		
+  		  		<Button android:text="Invite" 
+  		  		android:id="@+id/inviteButton" 
+  		  		android:layout_width="wrap_content" 
+  		  		android:layout_height="wrap_content"
+  		  		android:paddingLeft="14dp"
+  				android:paddingRight="14dp"
+			  	android:paddingTop="4dp"
+			  	android:paddingBottom="4dp"
+			  	android:textColor="#FFFFFFFF"
+			  	android:textSize="14dp"
+			  	android:background="@drawable/blue_button">
+  		  		</Button>
+  		  		
+  		  		<Button android:text="Share" 
+  		  		android:id="@+id/shareButton" 
+  		  		android:layout_width="wrap_content" 
+  		  		android:layout_height="wrap_content"
+  		  		android:paddingLeft="14dp"
+  				android:paddingRight="14dp"
+			  	android:paddingTop="4dp"
+			  	android:paddingBottom="4dp"
+			  	android:textColor="#FFFFFFFF"
+			  	android:textSize="14dp"
+			  	android:background="@drawable/blue_button">
+  		  		</Button>
+  		
+  		</LinearLayout>
+  
+  </RelativeLayout>
+    
+</LinearLayout>
