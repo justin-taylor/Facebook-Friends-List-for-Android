@@ -19,7 +19,6 @@ import com.google.gson.Gson;
 
 public class FacebookEx{
 	
-	public static final String APPID = "REPLACE WITH YOUR APP ID";
 	public static final String[] permissions = new String[] { "email", "read_stream", "offline_access" };
 	
 	public static final String PREFERENCES  	= "UserPreferences";
@@ -33,6 +32,7 @@ public class FacebookEx{
 	
 	private Facebook facebook;
 	
+	private String _appId;
 	
 	// Parameters to be used with the post dialogs
 	private String _androidUrl;
@@ -45,6 +45,16 @@ public class FacebookEx{
 	private String _redirectUri;
 	private String _link;
 	
+	
+	public void setFacebookAppId(String appId)
+	{
+		_appId = appId;
+	}
+	
+	public String getFacebookAppId()
+	{
+		return _appId;
+	}
 	
 	public void setAndroidUrl(String androidUrl)
 	{
@@ -95,7 +105,7 @@ public class FacebookEx{
 	
 		Bundle parameters = new Bundle();
 		
-		parameters.putString("app_id", APPID);
+		parameters.putString("app_id", _appId);
     	parameters.putString("redirect_uri", _redirectUri);
     	parameters.putString("message", _message);
     	parameters.putString("link", _link);
@@ -112,7 +122,7 @@ public class FacebookEx{
 	
 	private void init()
 	{
-		facebook = new Facebook(APPID);
+		facebook = new Facebook(_appId);
 	}
 	
 	DialogListener dListener = new DialogListener(){

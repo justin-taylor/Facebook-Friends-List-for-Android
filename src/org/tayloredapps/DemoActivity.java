@@ -18,6 +18,7 @@ public class DemoActivity extends Activity {
         setContentView(R.layout.main);
         
         FacebookEx.Instance().setActivity( this );
+        FacebookEx.Instance().setFacebookAppId("170682503059245");
         
         FacebookEx.Instance().setMessage("message");
         FacebookEx.Instance().setCaption("caption");
